@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setifian Scientific Club | SESC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="SESC Logo">
+                    <h1>Setifian Scientific Club</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#album">Album</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div id="particles-js"></div>
+        <div class="math-formulas">
+            <span class="formula" style="left: 10%; top: 20%;">E=mc²</span>
+            <span class="formula" style="left: 80%; top: 40%;">∫sin(x²)dx</span>
+            <span class="formula" style="left: 30%; top: 60%;">F=G(m₁m₂)/r²</span>
+            <span class="formula" style="left: 60%; top: 80%;">2H₂+O₂→2H₂O</span>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to <span style="color: var(--accent-color);">Setifian Scientific Club</span></h1>
+                <p>Discover a community of passionate students dedicated to scientific innovation, skill development, and creating a vibrant academic environment at Ferhat Abbas University.</p>
+                <div class="hero-btns">
+                    <a href="#about" class="btn">Discover More</a>
+                    <a href="https://taplink.cc/sesc" class="btn" style="background: var(--secondary-color);">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About SESC</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="about.jpg" alt="SESC Team">
+                </div>
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>Established on April 29, 2013, at the Faculty of Sciences (UFAS1), Setifian Scientific Club (SESC) is the first scientific club in Setif. We are a dynamic community dedicated to fostering intellectual growth, bridging theory with practice through seminars, workshops, and field expeditions, and empowering students to excel academically and beyond.</p>
+                    <p>More than an academic forum, SESC is a close-knit community that nurtures creativity, fosters friendships, and develops community awareness. We provide internships, job opportunities, and a platform for students to realize their potential with our slogan: <strong>"Together We Realize Our."</strong></p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Scientific Innovation</h4>
+                                <p>Promoting cutting-edge research and experimentation.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Skill Development</h4>
+                                <p>Enhancing technical and creative competencies.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Community Building</h4>
+                                <p>Fostering collaboration and teamwork.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Career Opportunities</h4>
+                                <p>Providing internships and job prospects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-atom"></i>
+                </div>
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="tech-item" data-tilt>
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="cube">
+                <div class="cube-face cube-face-front"><i class="fas fa-code"></i></div>
+                <div class="cube-face cube-face-back"><i class="fas fa-atom"></i></div>
+                <div class="cube-face cube-face-right"><i class="fas fa-calculator"></i></div>
+                <div class="cube-face cube-face-left"><i class="fas fa-flask"></i></div>
+                <div class="cube-face cube-face-top"><i class="fas fa-brain"></i></div>
+                <div class="cube-face cube-face-bottom"><i class="fas fa-microchip"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-container">
+                <div class="counter-item">
+                    <div class="counter-value" data-count="12">0</div>
+                    <div class="counter-text">Years of Excellence</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" data-count="98">0</div>
+                    <div class="counter-text">Active Members</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" data-count="7">0</div>
+                    <div class="counter-text">Projects Completed</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" data-count="30">0</div>
+                    <div class="counter-text">Events Organized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Departments & Sections</h2>
+            </div>
+            <div class="tabs-container">
+                <button class="tab-btn active" data-target="departments-tab">Departments</button>
+                <button class="tab-btn" data-target="sections-tab">Sections</button>
+                <button class="tab-btn" data-target="specialties-tab">Specialties</button>
+            </div>
+            <div class="tab-content active" id="departments-tab">
+                <div class="cards-grid">
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="mob.jpg" alt="Graphic Design">
+                        </div>
+                        <div class="card-content">
+                            <h3>Graphic Design</h3>
+                            <p>Creating visual concepts to communicate ideas that inspire and captivate.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="istockphoto.jpg " alt="Video Production"/>
+                        </div>
+                        <div class="card-content">
+                            <h3>Video Production</h3>
+                            <p>Capturing and editing videos for events, tutorials, and promotions.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="podcasts.jpg" alt="SESC Podcast">
+                        </div>
+                        <div class="card-content">
+                            <h3>SESC Podcast</h3>
+                            <p>Producing audio content on scientific topics and student discussions.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="photographer.jpg" alt="Photography">
+                        </div>
+                        <div class="card-content">
+                            <h3>Photography</h3>
+                            <p>Capturing moments and creating visual stories through photography.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="digital-marketing-vector-illustration5.jpg" alt="Marketing">
+                        </div>
+                        <div class="card-content">
+                            <h3>Marketing</h3>
+                            <p>Promoting club activities and events across various platforms.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="gamers-play-video-game-different-hardware-platforms-cross-platform-play-cross-play-cross-platform-gaming-concept_335657-1819.avif" alt="Esports">
+                        </div>
+                        <div class="card-content">
+                            <h3>Esports</h3>
+                            <p>Organizing competitive gaming events for enthusiasts.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="event-planner-template-hand-drawn-cartoon-flat-illustration-with-planning-schedule-time-management-business-agenda-and-calendar-concept-vector.jpg" alt="Events">
+                        </div>
+                        <div class="card-content">
+                            <h3>Events</h3>
+                            <p>Planning scientific, cultural, and recreational events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="sections-tab">
+                <div class="cards-grid">
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="publics.jpg" alt="Public Speaking">
+                        </div>
+                        <div class="card-content">
+                            <h3>Public Speaking</h3>
+                            <p>Developing communication and presentation skills.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="mob.jpg" alt="Mobile App Development">
+                        </div>
+                        <div class="card-content">
+                            <h3>Mobile App Development</h3>
+                            <p>Building apps using Flutter for cross-platform solutions.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="startup-abstract-concept_335657-3029.avif" alt="Entrepreneurship">
+                        </div>
+                        <div class="card-content">
+                            <h3>Entrepreneurship</h3>
+                            <p>Fostering innovation and startup mindsets.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="journal-vectorielle-plate-isolee-fond-blanc_633472-2412.avif" alt="SESC Magazine">
+                        </div>
+                        <div class="card-content">
+                            <h3>SESC Magazine</h3>
+                            <p>Publishing articles and research findings.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="digitalart.webp" alt="Digital Art">
+                        </div>
+                        <div class="card-content">
+                            <h3>Digital Art</h3>
+                            <p>Creating artwork using digital tools.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="cyber-security-vector-illustration-concept-with-characters-data-security-protected-access-control-privacy-data-protection-modern-flat-style-for-la-2FME30W.jpg" alt="Cybersecurity">
+                        </div>
+                        <div class="card-content">
+                            <h3>Cybersecurity</h3>
+                            <p>Securing digital systems and data.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="robotique.jpg" alt="Robotics">
+                        </div>
+                        <div class="card-content">
+                            <h3>Robotics</h3>
+                            <p>Designing and programming robots.</p>
+                        </div>
+                    </div>
+                    <div class="card" data-tilt>
+                        <div class="card-img">
+                            <img src="group-therapy.jpg" alt="SESC Cafe">
+                        </div>
+                        <div class="card-content">
+                            <h3>SESC Cafe (English)</h3>
+                            <p>Enhancing English communication skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="specialties-tab">
+                <div class="specialty-container">
+                    <div class="specialty-card" data-tilt>
+                        <div class="specialty-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Computer Science</h3>
+                        <p>Exploring algorithms, AI, and software development.</p>
+                        <div class="code-editor">
+                            <div class="code-header">
+                                <div class="circle red"></div>
+                                <div class="circle yellow"></div>
+                                <div class="circle green"></div>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span><span class="keyword">function</span> <span class="function">sescCode</span>() {</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span>  <span class="keyword">const</span> <span class="variable">club</span> = <span class="string">"Setifian Scientific Club"</span>;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span>  <span class="keyword">return</span> <span class="variable">club</span> + <span class="string">" - Excellence in Science"</span>;</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span>}</span>
+                            </div>
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-tilt>
+                        <div class="specialty-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Mathematics</h3>
+                        <p>Studying algebra, calculus, and modeling.</p>
+                        <div class="code-editor">
+                            <div class="code-header">
+                                <div class="circle red"></div>
+                                <div class="circle yellow"></div>
+                                <div class="circle green"></div>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span><span class="comment">// Mathematics formulas</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span><span class="variable">f</span>(<span class="variable">x</span>) = <span class="math-formula">∫sin(x²)dx</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span><span class="variable">lim</span><sub><span class="variable">x→∞</span></sub> <span class="math-formula">(1+1/x)^x=e</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span><span class="variable">∇²Ψ</span> + <span class="math-formula">8π²m/h²(E-V)Ψ=0</span></span>
+                            </div>
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-tilt>
+                        <div class="specialty-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Physics</h3>
+                        <p>Investigating mechanics and quantum physics.</p>
+                        <div class="code-editor">
+                            <div class="code-header">
+                                <div class="circle red"></div>
+                                <div class="circle yellow"></div>
+                                <div class="circle green"></div>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span><span class="comment">// Physics equations</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span><span class="variable">E</span> = <span class="math-formula">mc²</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span><span class="variable">F</span> = <span class="math-formula">G(m₁m₂)/r²</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span><span class="variable">ΔS</span> ≥ <span class="math-formula">0</span></span>
+                            </div>
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                    <div class="specialty-card" data-tilt>
+                        <div class="specialty-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Chemistry</h3>
+                        <p>Exploring chemical reactions and processes.</p>
+                        <div class="code-editor">
+                            <div class="code-header">
+                                <div class="circle red"></div>
+                                <div class="circle yellow"></div>
+                                <div class="circle green"></div>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span><span class="comment">// Chemical reactions</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span><span class="variable">2H₂</span> + <span class="variable">O₂</span> → <span class="math-formula">2H₂O</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span><span class="variable">C₆H₁₂O₆</span> → <span class="math-formula">2C₂H₅OH+2CO₂</span></span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span><span class="variable">pH</span> = <span class="math-formula">-log[H⁺]</span></span>
+                            </div>
+                            <div class="loading-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Album Section -->
+    <section id="album" class="album">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item" data-tilt>
+                    <img src="about.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-17-42.jpg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            
+                <div class="gallery-item" data-tilt>
+                    <img src="about.jpg" alt="Event 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+               
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-10.jpg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-11.jpg" alt="Event 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="about.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-12 (2).jpg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-12.jpg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-13 (2).jpg" alt="Event 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="about.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-13.jpg" alt="Event 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-14.jpg" alt="Event 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="photo_2025-05-07_13-18-15.jpg" alt="Event 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-tilt>
+                    <img src="about.jpg" alt="Event 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+              
+              
+ 
+            </div>
+        </div>
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <img src="" alt="Lightbox Image">
+            </div>
+            <span class="lightbox-close">&times;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions or want to join our vibrant community? Reach out to us via email or follow us on social media!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:sesc.club@gmail.com">sesc.club@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Faculty of Sciences, Ferhat Abbas University, Setif 1, Algeria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/setifian.scientific.club/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/SeSC.Club" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/setifian-scientific-club-sesc/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.tiktok.com/@setifiane_scientificclub" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="form-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="SESC Logo">
+                    <h3>Setifian Scientific Club</h3>
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Setifian Scientific Club. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
