@@ -871,7 +871,8 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-         --text-color: #ffffff;
+         --text-color: #000000;
+        color : #000000;
         background: white;
         flex-direction: column;
         justify-content: flex-start;
